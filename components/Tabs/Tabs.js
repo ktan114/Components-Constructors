@@ -35,16 +35,14 @@ class TabsLink {
 
   select() {
     // select this link
-
     // select the associated tab
-
+    this.element.classList.toggle('Tabs__link-selected');
   }
 
   deselect() {
     // deselect this link
-
     // deselect the associated tab
-
+    this.element.classList.toggle('Tabs__link');
   }
 }
 
