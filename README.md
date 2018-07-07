@@ -10,7 +10,7 @@ You will be building on your prior work from Components-BEM by adding a `Tabs` c
 
 The HTML and CSS for the Tabs component and instance are provided so that you may add your prior work around it. If you have not finished Components-BEM, ask you TA for the solution.
 
-You may need to adjust some of the naming for the usuage of `Box` in the HTML provided if it's different in your implementation.
+You may need to adjust some of the naming for the usage of `Box` in the HTML provided if it's different in your implementation.
 
 ## Description
   The `Tabs` component should be a grouping of links and associated items. Only one item is shown at a time, and each item is shown when its corresponding link is clicked. You should default to the first link and item upon page load.
