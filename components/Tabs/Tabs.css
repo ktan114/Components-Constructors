@@ -1,9 +1,15 @@
-.Tabs__item {
-  display: none;
+/* index.js */
+
+.Tabs {
+  border: 2.5px solid black;
+  padding: 20px; 
 }
 
-.Tabs__item-selected {
-  display: block;
+.Tabs__header {
+  text-align: center;
+	font-size: 2.5em;
+	font-weight: bold;
+  margin: 0 auto;
 }
 
 .Tabs__links {
@@ -19,7 +25,17 @@
   background-color: gray;
 }
 
+.Tabs__item {
+  display: none;
+}
+
+/* Tabs.js */
+
 .Tabs__link-selected {
   background-color: white;
   border: solid 1px gray;
+}
+
+.Tabs__item-selected {
+  display: block;
 }

@@ -6,12 +6,14 @@ class TabsItem {
   }
 
   select() {
-    // should use classList
+    // should use classList 
+    // will remove display block
     this.element.classList.add('Tabs__item-selected');
   }
 
   deselect() {
     // should use classList
+    // will remove display block
     this.element.classList.remove('Tabs__item-selected');
   }
 }
@@ -23,7 +25,6 @@ class TabsLink {
     this.tabsItem = parent.getTab(this.element.dataset.tab);// assign this to the associated tab using the parent's "getTab" method by passing it the correct data
     // reassign this.tabsItem to be a new instance of TabsItem, passing it this.tabsItem
     this.tabsItem = new TabsItem(this.tabsItem);
-    // console.log(this.tabsItem);
     this.element.addEventListener('click', () => {
       this.tabs.updateActive(this);
       this.select();
@@ -49,17 +50,15 @@ class Tabs {
   constructor(element) {
     this.element = element;// attaches the dom node to the object as "this.element"
     this.links = element.querySelectorAll(".Tabs__link");
-    // console.log(this.links);
     this.links = Array.from(this.links).map((link) => {
       return new TabsLink(link, this);
     });
-    // console.log(this.links);
     this.activeLink = this.links[0];
     this.init();
   }
 
   init() {
-    // select the first link and tab upon ititialization
+    // select the first link and tab upon initialization
     this.activeLink.select();
   }
 
